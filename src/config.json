@@ -1,0 +1,7 @@
+{
+	"port": 8080,
+	"bodyLimit": "100kb",
+	"corsHeaders": ["Link"],
+	"dbUrl": "https://rinkeby.infura.io",
+	"dbToken": "0xe6c21f6cafa9527bff7c4b6e1fcdfce35ffcaa9a"
+}

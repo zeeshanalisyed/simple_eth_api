@@ -1,0 +1,39 @@
+{
+  "name": "simple_eth_api",
+  "version": "1.0.0",
+  "description": "the simple application provides basic apis to create wallet, extract balance, and move ethers",
+  "main": "dist",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "start": "node dist",
+    "prestart": "npm run -s build",
+    "test": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeeshanalisyed/sample_eth_api.git"
+  },
+  "author": "zeeshan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "compression": "^1.5.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "morgan": "^1.8.0",
+    "web3": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-core": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "eslint": "^3.1.1",
+    "nodemon": "^1.9.2"
+  },
+  "bugs": {
+    "url": "https://github.com/zeeshanalisyed/sample_eth_api/issues"
+  },
+  "homepage": "https://github.com/zeeshanalisyed/sample_eth_api#readme"
+}
